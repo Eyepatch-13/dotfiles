@@ -98,6 +98,20 @@ return require('packer').startup(function(use)
     end
   }
 
+  use {
+    "mistricky/codesnap.nvim",
+    run = 'make',
+    config = function()
+        require("codesnap").setup({
+          mac_window_bar = false,
+          title = "Eyepatch",
+          has_breadcrumbs = true,
+          bg_theme = "grape",
+          watermark = "Eyepatch"
+        })
+    end
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
