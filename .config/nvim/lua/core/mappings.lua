@@ -22,14 +22,6 @@ vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",
   {silent = true, noremap = true}
 )
 
-vim.keymap.set("v", "<leader>cc", "<cmd>'<,'>CodeSnap<cr>",
-  {silent = true, noremap = true}
-)
-
-vim.keymap.set("v", "<leader>cS", "<cmd>'<,'>CodeSnapSave<cr>",
-  {silent = true, noremap = true}
-)
-
 -- Miscellanous
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
