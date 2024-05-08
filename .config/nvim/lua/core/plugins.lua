@@ -112,6 +112,15 @@ return require('packer').startup(function(use)
     end
   }
 
+  use {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {}
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
