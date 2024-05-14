@@ -121,6 +121,14 @@ return require('packer').startup(function(use)
     requires = {'nvim-tree/nvim-web-devicons'}
   }
 
+  use {
+    'mikavilpas/yazi.nvim',
+    requires = {'nvim-lua/plenary.nvim'},
+    config = function()
+      require('yazi').setup()
+    end
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end

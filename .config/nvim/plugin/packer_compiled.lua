@@ -85,7 +85,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["codesnap.nvim"] = {
-    config = { "\27LJ\2\n十1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\5\14watermark\rEyepatch\rbg_theme\ngrape\20has_breadcrumbs\2\ntitle\rEyepatch\19mac_window_bar\1\nsetup\rcodesnap\frequire\0" },
+    config = { "\27LJ\2\n十1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\5\20has_breadcrumbs\2\ntitle\rEyepatch\19mac_window_bar\1\14watermark\rEyepatch\rbg_theme\ngrape\nsetup\rcodesnap\frequire\0" },
     loaded = true,
     path = "/home/eyepatch/.local/share/nvim/site/pack/packer/start/codesnap.nvim",
     url = "https://github.com/mistricky/codesnap.nvim"
@@ -208,26 +208,36 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eyepatch/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["yazi.nvim"] = {
+    config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tyazi\frequire\0" },
+    loaded = true,
+    path = "/home/eyepatch/.local/share/nvim/site/pack/packer/start/yazi.nvim",
+    url = "https://github.com/mikavilpas/yazi.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: codesnap.nvim
-time([[Config for codesnap.nvim]], true)
-try_loadstring("\27LJ\2\n十1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\5\14watermark\rEyepatch\rbg_theme\ngrape\20has_breadcrumbs\2\ntitle\rEyepatch\19mac_window_bar\1\nsetup\rcodesnap\frequire\0", "config", "codesnap.nvim")
-time([[Config for codesnap.nvim]], false)
+-- Config for: yazi.nvim
+time([[Config for yazi.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tyazi\frequire\0", "config", "yazi.nvim")
+time([[Config for yazi.nvim]], false)
 -- Config for: mason.nvim
 time([[Config for mason.nvim]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nmason\frequire\0", "config", "mason.nvim")
 time([[Config for mason.nvim]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
+-- Config for: codesnap.nvim
+time([[Config for codesnap.nvim]], true)
+try_loadstring("\27LJ\2\n十1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\5\20has_breadcrumbs\2\ntitle\rEyepatch\19mac_window_bar\1\14watermark\rEyepatch\rbg_theme\ngrape\nsetup\rcodesnap\frequire\0", "config", "codesnap.nvim")
+time([[Config for codesnap.nvim]], false)
 -- Config for: undotree
 time([[Config for undotree]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rundotree\frequire\0", "config", "undotree")
 time([[Config for undotree]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
