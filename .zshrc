@@ -62,6 +62,11 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
+alias godot='Godot_v4.2.2-stable_linux.x86_64'
+alias jrun="/vault/Programming/scripts/jrun.sh"
 
 # shell integration
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
+export MODULAR_HOME="/home/eyepatch/.modular"
+export PATH="/home/eyepatch/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export PATH="$PATH:/home/eyepatch/.modular/bin"
